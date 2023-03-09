@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5976165922403923293}
   - component: {fileID: 5976165922402711119}
   - component: {fileID: 5976165922401624459}
-  - component: {fileID: 8301331624736865117}
+  - component: {fileID: -8262091991188264628}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8301331624736865117
+--- !u!114 &-8262091991188264628
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +93,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5976165922403598013}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce58831066819264f87f138fc3d7d688, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e71a5e0e7cc0b24a9735a5e36138e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
