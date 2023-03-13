@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 5976165922402711119}
   - component: {fileID: 5976165922401624459}
   - component: {fileID: -8262091991188264628}
+  - component: {fileID: 6242059415104300197}
+  - component: {fileID: -1682174700202572383}
+  - component: {fileID: -2914258960707784577}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -96,3 +99,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e71a5e0e7cc0b24a9735a5e36138e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6242059415104300197
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5976165922403598013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.32699585, y: 0.32699984, z: 0.32700062}
+  m_Center: {x: 0, y: 0.16349992, z: 0}
+--- !u!54 &-1682174700202572383
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5976165922403598013}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &-2914258960707784577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5976165922403598013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce58831066819264f87f138fc3d7d688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
