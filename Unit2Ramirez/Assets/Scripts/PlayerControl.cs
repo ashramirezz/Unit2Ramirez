@@ -15,6 +15,8 @@ public class PlayerControl : MonoBehaviour
     public float zMax;
     public float verticalInput;
 
+    public Transform projectileSpawnPoint;
+
     // Update is called once per frame
     void Update() 
     {
@@ -28,6 +30,16 @@ public class PlayerControl : MonoBehaviour
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
+        //Vertical player movement 
+        if (transform.position.z < zMin)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, zMin);
+        }
+
+        if(transform.position.z > zMax)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, zMax);
+        }
 
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
@@ -38,7 +50,7 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //Launch a projectile from the player
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab, projectileSpawnPoint.position, projectilePrefab.transform.rotation);
         }
 
         
