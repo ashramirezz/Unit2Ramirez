@@ -40,9 +40,7 @@ public class DestroyOutOfBounds : MonoBehaviour
             gameManager.AddLives(-1);
             Destroy(gameObject);
         }
+        
 
-        //Dsiplayes "Game Over" on the screen when game ends or player loses
-        Debug.Log("Game Over!");
-        Destroy(gameObject);
     }
 }
